@@ -1,0 +1,8 @@
+prefix=/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/devel
+
+Name: styx_msgs
+Description: Description of styx_msgs
+Version: 0.0.0
+Cflags: -I/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/devel/include
+Libs: -L/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/devel/lib 
+Requires: 

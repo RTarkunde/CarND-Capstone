@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/gtest/src -lpthread -Wl,-rpath,/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/gtest/src 

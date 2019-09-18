@@ -13,6 +13,7 @@ import math
 
 class TLPublisher(object):
     def __init__(self):
+        rospy.logwarn("entry: TLPublisher::init")
         rospy.init_node('tl_publisher')
 
         self.traffic_light_pubs = rospy.Publisher('/vehicle/traffic_lights', TrafficLightArray, queue_size=1)
@@ -31,6 +32,7 @@ class TLPublisher(object):
             rate.sleep()
 
     def create_light(self, x, y, z, yaw, state):
+        rospy.logwarn("entry: create_light")
         light = TrafficLight()
 
         light.header = Header()
@@ -43,6 +45,7 @@ class TLPublisher(object):
         return light
 
     def create_pose(self, x, y, z, yaw=0.):
+        rospy.logwarn("entry: create_pose")
         pose = PoseStamped()
 
         pose.header = Header()

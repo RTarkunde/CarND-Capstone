@@ -1,0 +1,114 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0162a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0162a.dir/build.make CMakeFiles/cmTC_0162a.dir/build
+make[1]: Entering directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0162a.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_0162a.dir/CheckSymbolExists.c.o   -c /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0162a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0162a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_0162a.dir/CheckSymbolExists.c.o  -o cmTC_0162a -rdynamic 
+CMakeFiles/cmTC_0162a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0162a.dir/build.make:97: recipe for target 'cmTC_0162a' failed
+make[1]: *** [cmTC_0162a] Error 1
+make[1]: Leaving directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0162a/fast' failed
+make: *** [cmTC_0162a/fast] Error 2
+
+File /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ebd1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5ebd1.dir/build.make CMakeFiles/cmTC_5ebd1.dir/build
+make[1]: Entering directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ebd1.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5ebd1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ebd1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ebd1.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5ebd1.dir/CheckFunctionExists.c.o  -o cmTC_5ebd1 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5ebd1.dir/build.make:97: recipe for target 'cmTC_5ebd1' failed
+make[1]: *** [cmTC_5ebd1] Error 1
+make[1]: Leaving directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5ebd1/fast' failed
+make: *** [cmTC_5ebd1/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b459c/fast"
+make[1]: Entering directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b459c.dir/build.make CMakeFiles/cmTC_b459c.dir/build
+make[2]: Entering directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b459c.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b459c.dir/CheckSymbolExists.c.o   -c /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b459c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b459c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b459c.dir/CheckSymbolExists.c.o  -o cmTC_b459c -rdynamic 
+CMakeFiles/cmTC_b459c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b459c.dir/build.make:97: recipe for target 'cmTC_b459c' failed
+make[2]: *** [cmTC_b459c] Error 1
+make[2]: Leaving directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b459c/fast' failed
+make[1]: *** [cmTC_b459c/fast] Error 2
+make[1]: Leaving directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+
+File /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8abe4/fast"
+make[1]: Entering directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8abe4.dir/build.make CMakeFiles/cmTC_8abe4.dir/build
+make[2]: Entering directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8abe4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8abe4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8abe4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8abe4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8abe4.dir/CheckFunctionExists.c.o  -o cmTC_8abe4 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8abe4.dir/build.make:97: recipe for target 'cmTC_8abe4' failed
+make[2]: *** [cmTC_8abe4] Error 1
+make[2]: Leaving directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8abe4/fast' failed
+make[1]: *** [cmTC_8abe4/fast] Error 2
+make[1]: Leaving directory '/home/student/udacity/term2/Project4/CarND-Capstone/ros/build/CMakeFiles/CMakeTmp'
+
+

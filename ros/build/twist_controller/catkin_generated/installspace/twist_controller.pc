@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: twist_controller
+Description: Description of twist_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 
